@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Destination</title>
+</head>
+<body>
+    <a href="viewinformasi.jsp">View All Destinations</a><br/>
+
+    <h1>Add New Destination</h1>
+    <form action="adddestinasi.jsp" method="post" enctype="multipart/form-data">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="nama" required/></td>
+            </tr>
+            <tr>
+                <td>Location:</td>
+                <td><input type="text" name="tempat" required/></td>
+            </tr>
+            <tr>
+                <td>Description:</td>
+                <td><textarea name="deskripsi" rows="5" required></textarea></td>
+            </tr>
+<!--            <tr>
+                <td>Image:</td>
+                <td><input type="file" name="gambar" accept="image/*" required/></td>
+            </tr>-->
+            <tr>
+                <td colspan="2"><input type="submit" value="Add Destination"/></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
